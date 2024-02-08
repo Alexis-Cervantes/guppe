@@ -26,8 +26,12 @@ dir(__builtins__) ENTER
 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
 
+escolhemos a função "INPUT"
+input()  ->
+ todo dado recebido via input é de tipo string
 """
-# Entrada de Dados
+# Recebendo dados do usuario:
+
 
 print("Qual é seu nome: ")
 nome = input()
