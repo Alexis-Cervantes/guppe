@@ -30,7 +30,7 @@ Escolhemos a função "INPUT"
 
 Recebendo dados do usuario:
 
-input()  -> todo dado recebido via input é de tipo string
+input() => todo dado recebido via input é de tipo string
 
  Em Python, String é todo o que este entre:
  - Aspas simples;
