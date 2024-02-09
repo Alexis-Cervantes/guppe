@@ -26,17 +26,56 @@ dir(__builtins__) ENTER
 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
 
-escolhemos a função "INPUT"
-input()  ->
- todo dado recebido via input é de tipo string
+Escolhemos a função "INPUT"
+
+Recebendo dados do usuario:
+
+input()  -> todo dado recebido via input é de tipo string
+
+ Em Python, String é todo o que este entre:
+ - Aspas simples;
+ - Aspas duplas;
+ - Aspas simples triplas;
+ - Aspas duplas triplas;
+
+ Exemplos:
+ - Aspas simples -> 'Alexis Cervantes'
+ - Aspas duplas -> "Alexis Cervantes"
+ - Aspas simples triplas -> '''Alexis Cervantes'''
 """
-# Recebendo dados do usuario:
+# Aspas duplas triplas -> """Alexis Cervantes"""
+# Entrada de dados
+# print('Qual é seu nome')
+# nome = input()
+nome = input('Quál seu nome: ')
 
+# Exemplo de print antigo 'python 2.x'
+# print('Seja bem-vindo(a) %s' % nome)
 
-print("Qual é seu nome: ")
-nome = input()
+# Exemplo de print moderno 'python 3.x'
+# print('Seja bem-vindo(a) {0}'.format(nome))
 
-# processamento
+# Exemplo de print mais atual 'python 3.7'
+print(f'Seja bem-vindo(a) {nome}')
 
+# print('Qual é seu idade')
+# idade = input()
+
+idade = int(input('Qual seu idade: '))
+
+# Processamento
 # Saida de dados
-print("Seja bem-vindo(a) %s" % nome)
+
+# Exemplo de print antigo 'python 2.x'
+# print('A %s tem %s anos' % (nome, idade))
+
+# Exemplo de print moderno 'python 3.x'
+# print('A {0} tem {1} anos'.format(nome, idade))
+
+# Exemplo de print mais atual 'python 3.7'
+print(f'O {nome} tem {idade} anos')
+'''
+# int(idade) => cast
+cast é a conversão de um tipó para outro,
+'''
+print(f'{nome} nasceu em {2024 - idade} ')
