@@ -30,7 +30,7 @@ Escolhemos a função "INPUT"
 
 Recebendo dados do usuario:
 
-input()  -> todo dado recebido via input é de tipo string
+input() => todo dado recebido via input é de tipo string
 
  Em Python, String é todo o que este entre:
  - Aspas simples;
@@ -43,6 +43,7 @@ input()  -> todo dado recebido via input é de tipo string
  - Aspas duplas -> "Alexis Cervantes"
  - Aspas simples triplas -> '''Alexis Cervantes'''
 """
+
 # Aspas duplas triplas -> """Alexis Cervantes"""
 # Entrada de dados
 # print('Qual é seu nome')
@@ -75,7 +76,7 @@ idade = int(input('Qual seu idade: '))
 # Exemplo de print mais atual 'python 3.7'
 print(f'O {nome} tem {idade} anos')
 '''
-# int(idade) => cast
-cast é a conversão de um tipó para outro,
+# int(idade) => Cast
+Cast é a conversão de um tipo para outro,
 '''
 print(f'{nome} nasceu em {2024 - idade} ')
