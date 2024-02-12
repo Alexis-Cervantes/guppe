@@ -1,25 +1,25 @@
 """LOOP FOR"""
 
-'''Em C ou Java - Estrutura
+"""Em C ou Java - Estrutura
 for(int i = 0, i < 10, i++){
     //execução do loop
 }
-'''
+"""
 
-'''Em Python - Estrutura
+"""Em Python - Estrutura
 for item in iteravel:
     //execução do loop
-'''
+"""
 
-'''Exemplo de iteraveis:
+"""Exemplo de iteraveis:
    - String: 
      nome = 'Alexis Cervantes'
    - Listas:
      lista = [10, 20, 30, 40]
    - Range:
      numeros = range(1, 10)
-'''
-nome = 'Alexis Cervantes'
+"""
+nome = "Alexis Cervantes"
 lista = [10, 20, 30, 40]
 numeros = range(1, 10)  # Temos que transformar em uma lista
 
@@ -67,7 +67,7 @@ numeros = range(1, 10)  # Temos que transformar em uma lista
 # for valor in enumerate(nome):
 #     print(valor[0], "-", valor[1])
 
-'''Exercicios'''
+"""Exercicios"""
 # qtd = int(input('Quantas veses este lopp deve rodar: '))
 # soma = 0
 
@@ -76,13 +76,14 @@ numeros = range(1, 10)  # Temos que transformar em uma lista
 #     soma = soma + num
 # print(f"A soma é: {soma}")
 
-'''Exercicios'''
+"""Exercicios"""
 # Tabela de emojis Unicode: https://apps.timwhitlock.info/emoji/tables/unicode
 # Origiinal = U+1F60D
 # Modificado = U0001F60D
-emoji = 'U0001F60D'
+emoji = "U0001F60D"
 
 for _ in range(3):
     for num in range(1, 11):
-        print('\U0001F60D' * num)
+        print("\U0001F60D" * num)
+
 
