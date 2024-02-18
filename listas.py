@@ -12,6 +12,7 @@ PYTHON:
  - DINAMICO: Não possuem tamanho fixo: - podemos criar as listas e simplesmenste ir adicionando elementos
  - QUALQUER TIPO DE DADO: Não possue tipo de dado fixo -  podemos colocar qualquer tipo de dado.
  - As listas são represetadas por colchetes: [].
+ LISTAS SÃO MUTAVEIS
 '''
 # # print([])
 # type([])
@@ -339,15 +340,16 @@ a outra'''
 
 # Forma 2:
 lista14 = [1, 2, 3]  # CRIAMOS LISTA14
-print(lista14)  # IMPRIMIMOS A LISTA14
+# print(lista14)  # IMPRIMIMOS A LISTA14
 
 nova_lista15 = lista14  # 'ATRIBUIMOS' OS VALORES DA LISTA14 PARA UMA NOVA LISTA (NOVA_LISTA15)
-print(nova_lista15)  # IMPRIMIMOS A NOVA_LISTA15
+# print(nova_lista15)  # IMPRIMIMOS A NOVA_LISTA15
 
 nova_lista15.append(26)  # ACRESENTAMOS O NUMERO 26 A NOVA_LISTA15
 
-print(lista14)  # IMPRIMIMOS LISTA14
-print(nova_lista15)  # IMPRIMIMOS NOVA_LISTA15
+# print(lista14)  # IMPRIMIMOS LISTA14
+# print(nova_lista15)  # IMPRIMIMOS NOVA_LISTA15
 '''OBS: SHALLOW COPY: Observamos que realizamos a atribuição dos valores da lista14 a uma nova variavel/lista 
 (nova_lista15). Depois quando realizamos a ação de modificar a lista (append(26), esta ação refleteuse em ambas as 
 listas'''
+print('Olá, voce está no arquivo LISTAS...')
