@@ -82,8 +82,10 @@ numeros = range(1, 10)  # Temos que transformar em uma lista
 # Modificado = U0001F60D
 emoji = "U0001F60D"
 
-for _ in range(3):
-    for num in range(1, 11):
-        print("\U0001F60D" * num)
+# for _ in range(3):
+#     for num in range(1, 11):
+#         print("\U0001F60D" * num)
+
+print('Olá, voce está no arquivo Loop For...')
 
 

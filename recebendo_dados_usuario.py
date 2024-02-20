@@ -79,4 +79,6 @@ print(f'O {nome} tem {idade} anos')
 # int(idade) => Cast
 Cast é a conversão de um tipo para outro,
 '''
-print(f'{nome} nasceu em {2024 - idade} ')
+# print(f'{nome} nasceu em {2024 - idade} ')
+
+print('Olá, voce está no arquivo Recebendo Dados do usuario...')

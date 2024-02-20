@@ -92,6 +92,6 @@ variavel_longa = 5
 [7] Termine sempre uma instrução com uma nova linha
 
 """
-
+print('Olá, voce está no arquivo PEP8...')
 
 

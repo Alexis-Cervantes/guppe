@@ -48,3 +48,6 @@ print('')
 # Se podemos imprimir uma list(range)) iteravel com o print:
 # lista = list(range(1, 10))
 # print(lista)
+
+
+print('Olá, voce está no arquivo Entendeno Range...')

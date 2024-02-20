@@ -26,7 +26,6 @@ help -> Apresenta a documentação/ como utilizar atributos/propriedades e funç
 
        "ALEXIS".lower() ENTER
        'alexis'
-
-
 """
-print('Alexis')
+# print('Alexis')
+print('Olá, voce está no arquivo Dir e Help...')

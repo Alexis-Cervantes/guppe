@@ -33,3 +33,5 @@ if ativo is False:
 else:
     print('Bem-vindo usuario IS')
 
+print('Olá, voce está no arquivo Estruturas Logicas AND, OR NOT...')
+

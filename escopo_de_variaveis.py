@@ -14,15 +14,15 @@ OBS: Python é uma linguagem de tipagem dinâmico. Não precisamos colocar o tip
 media = 5
 print(f'A sua media foi de: {media}')
 
-if media < 7:
-    nova_media = media + 2
-    print(f"A sua nova media com ajuda sera: {nova_media} ")
-else:
-    print(f'Você esta aprovado: {media}')
+# if media < 7:
+#     nova_media = media + 2
+#     print(f"A sua nova media com ajuda sera: {nova_media} ")
+# else:
+#     print(f'Você esta aprovado: {media}')
 
 # print(nova_media) ... Se queremos imrprimir o valor da nova media acusara um erro, por ser uma variavei local
 
-
+print('Olá, voce está no arquivo Escopo de variaveis...')
 
 
 

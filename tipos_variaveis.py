@@ -110,3 +110,5 @@ de Cacia"""
 texto = 'socorram me subino onibus em marrocos'  # PALINDROMO
 # print(texto)
 # print(texto[::-1])
+
+print('Olá, voce está no arquivo Tipo Varievel...')

@@ -27,3 +27,5 @@ numero = 1
 #
 # while resposta != 'sim':
 #     resposta = input('Já acabou Jessica: ')
+
+print('Olá, voce está no arquivo Loop While...')

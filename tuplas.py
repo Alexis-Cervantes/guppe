@@ -137,4 +137,5 @@ tupla17 = (1, 2, 3)
 
 # print(nova_tupla18)
 # print(tupla17)
+
 print('Olá, voce está no arquivo TUPLAS...')

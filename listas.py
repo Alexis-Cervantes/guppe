@@ -352,4 +352,5 @@ nova_lista15.append(26)  # ACRESENTAMOS O NUMERO 26 A NOVA_LISTA15
 '''OBS: SHALLOW COPY: Observamos que realizamos a atribuição dos valores da lista14 a uma nova variavel/lista 
 (nova_lista15). Depois quando realizamos a ação de modificar a lista (append(26), esta ação refleteuse em ambas as 
 listas'''
+
 print('Olá, voce está no arquivo LISTAS...')
