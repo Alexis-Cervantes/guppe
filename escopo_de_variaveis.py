@@ -12,7 +12,7 @@ nome_da_variavel = valor_da_variavel
 OBS: Python é uma linguagem de tipagem dinâmico. Não precisamos colocar o tipo. REATRIBUIÇÃO
 '''
 media = 5
-print(f'A sua media foi de: {media}')
+# print(f'A sua media foi de: {media}')
 
 # if media < 7:
 #     nova_media = media + 2

@@ -1,10 +1,11 @@
-""" TIPO NUMERICO INT """
+"""TIPOS DE VARIAVEIS"""
+
+'''Tipo Númerico - int'''
 num = 1_000_000
 # print(num)
 
-""" TIPO NUMERICO FLOAT """
-'''Tambem conhecido como Real, decimal
-casas decimais
+'''Tipo Númerico - float
+Tambem conhecido como Real, decimal, casas decimais
 OBS: O separdor de casas decimais na programação é o ponto não a virgula.
 '''
 # Errado do ponto de vista do float, mas gera uma dupla
@@ -35,8 +36,8 @@ res = int(valor2)
 # Podemos trabalhar com numeros complexos
 variavel = 5j
 
-""" TIPO BOOLEANO """
-'''Tem 02 constantes: Verdadeiro e Falso.
+'''Tipo Booleano
+Tem 02 constantes: Verdadeiro e Falso.
 True -> Verdadeiro
 False -> Falso
 '''
@@ -68,7 +69,7 @@ Ambos os valores deven ser verdadeiros
  - False or True => False
  - False or False => False
 '''
-""" TIPO STRING """
+'''Tipo String'''
 """Em Pyton um dado é considerado uma string sempre que:
  - Estiver entre aspas simples =>  'aspas simples', '123', 'a', 'True', '43.5'
  - Estiver entre aspas duplas =>  "aspas simples", "123", "a", "True", "43.5"

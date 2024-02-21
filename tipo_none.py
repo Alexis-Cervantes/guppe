@@ -17,4 +17,4 @@ OBS: O tipo Nome é considerado com FALSE
 # print(numeros)
 # print(type(numeros))
 
-print("Olá, vc está no arquivo Tpo None")
+print("Olá, vc está no arquivo Tipo None")

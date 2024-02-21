@@ -48,7 +48,7 @@ input(): Thodo dado recebido via input é de tipo string
 # Entrada de dados
 # print('Qual é seu nome')
 # nome = input()
-nome = input('Quál seu nome: ')
+# nome = input('Quál seu nome: ')
 
 # Exemplo de print antigo 'python 2.x'
 # print('Seja bem-vindo(a) %s' % nome)
@@ -57,12 +57,12 @@ nome = input('Quál seu nome: ')
 # print('Seja bem-vindo(a) {0}'.format(nome))
 
 # Exemplo de print mais atual 'python 3.7'
-print(f'Seja bem-vindo(a) {nome}')
+# print(f'Seja bem-vindo(a) {nome}')
 
 # print('Qual é seu idade')
 # idade = input()
 
-idade = int(input('Qual seu idade: '))
+# idade = int(input('Qual seu idade: '))
 
 # Processamento
 # Saida de dados
@@ -74,7 +74,7 @@ idade = int(input('Qual seu idade: '))
 # print('A {0} tem {1} anos'.format(nome, idade))
 
 # Exemplo de print mais atual 'python 3.7'
-print(f'O {nome} tem {idade} anos')
+# print(f'O {nome} tem {idade} anos')
 '''
 # int(idade) => Cast
 Cast é a conversão de um tipo para outro,
