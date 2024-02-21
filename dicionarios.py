@@ -1,14 +1,15 @@
 """Dicionarios"""
-'''OBS: Em alguns linguagens de programação os diccionarios de Python são conhecidos por Mapas
+
+"""OBS: Em alguns linguagens de programação os diccionarios de Python são conhecidos por Mapas
 Dicionarios são coleccines de tipo chave/valor
 Diccionarios são representado por {}
 obs: sobre dicionarios
     - Chave e valor são separados por dois pontos  "chave: valor";
     - Tanto chave quanto valor podem ser de qualquer tipo de dado;
-    - Podemos misturar tipos de dados;'''
+    - Podemos misturar tipos de dados;"""
 # print(type({}))
 
-'''CRIAÇÃO DE DICIONARIOS'''
+"""CRIAÇÃO DE DICIONARIOS"""
 # Forma 1 (mais comum)
 # paises1 = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # print(paises1)
@@ -19,7 +20,7 @@ obs: sobre dicionarios
 # print(paises2)
 # print(type(paises2))
 
-'''ACESSANDO ELEMENTOS'''
+"""ACESSANDO ELEMENTOS"""
 # paises3 = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # Forma 1: Acessando via chave, do mesmo jeito que lista/tupla
 # print(paises3['br'])
@@ -32,7 +33,7 @@ obs: sobre dicionarios
 # print(paises3.get('ru'))
 
 
-'''ACESSANDO COM GET - recomendado'''
+"""ACESSANDO COM GET - recomendado"""
 # paises4 = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # russia = paises4.get('ru')
 #
@@ -49,22 +50,22 @@ obs: sobre dicionarios
 # else:
 #     print('Não encointrei o pais')
 
-paises6 = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+paises6 = {"br": "Brasil", "eua": "Estados Unidos", "py": "Paraguai"}
 # pais = paises6.get('ru', 'Não encontrado')
 # print(f'Encontreo pais {pais}')
 # Podemos definir um valor padrão para caso no encontremops o objeto com a chave informada
 
-'''VERIFICANDO SE DETERMINADO CHAVE ESTA DENTRO DE UM DICIONARIO'''
-paises7 = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+"""VERIFICANDO SE DETERMINADO CHAVE ESTA DENTRO DE UM DICIONARIO"""
+paises7 = {"br": "Brasil", "eua": "Estados Unidos", "py": "Paraguai"}
 # print('br' in paises7)
 # print('ru' in paises7)
 # print('Estados Unidos' in paises7)
 #
 # if 'ru' in paises7:
 #     russia = paises7['ru']
-'''Podemos utilizar qualquet tipo de dado:  int, float, string, boolean, listas, tuplas, diccionario - com chaves de di
+"""Podemos utilizar qualquet tipo de dado:  int, float, string, boolean, listas, tuplas, diccionario - com chaves de di
 cionario
-Tuplas: são interessantes de ser utilizadas como chave de dicionario porque são IMUTAVEIS'''
+Tuplas: são interessantes de ser utilizadas como chave de dicionario porque são IMUTAVEIS"""
 # localidades = {
 #     (35.6895, 39.6917): 'Escritorio em Tokio',
 #     (40.7128, 74.0060): 'Escritorio em Nova York',
@@ -73,8 +74,8 @@ Tuplas: são interessantes de ser utilizadas como chave de dicionario porque sã
 # print(localidades)
 # print(type(localidades))
 
-'''ADICIONAR ELEMENTOS EM UM DICCIONARIO'''
-receita = {'jan': 100, 'fev': 120, 'mar': 300}
+"""ADICIONAR ELEMENTOS EM UM DICCIONARIO"""
+receita = {"jan": 100, "fev": 120, "mar": 300}
 
 # print(receita)
 # print(type(receita))
@@ -88,7 +89,7 @@ receita = {'jan': 100, 'fev': 120, 'mar': 300}
 # receita.update(novo_dado)  # ou receita.update({'mai'}: 500)
 # print(receita)
 
-'''ATUALIZANDO DADOS EM UM DICIONARIO'''
+"""ATUALIZANDO DADOS EM UM DICIONARIO"""
 # Forma 1:
 # receita['mai'] = 550
 # print(receita)
@@ -97,12 +98,12 @@ receita = {'jan': 100, 'fev': 120, 'mar': 300}
 # receita.update({'mai': 600})
 # print(receita)
 
-'''OBS:
+"""OBS:
 1. A forma de adicionar novos elementos ou atualizar dados em um dicionarios é a mesma
-2. Em dicionarios NÃO podemos ter chaves repetidas'''
+2. Em dicionarios NÃO podemos ter chaves repetidas"""
 
-'''REMOVER DADOS'''
-receita2 = {'jan': 100, 'fev': 120, 'mar': 300}
+"""REMOVER DADOS"""
+receita2 = {"jan": 100, "fev": 120, "mar": 300}
 # print(receita2)
 
 # Forma 1: mais comum
@@ -117,7 +118,7 @@ receita2 = {'jan': 100, 'fev': 120, 'mar': 300}
 # del receita2['fev']
 # print(receita2)
 
-'''e-commerce:
+"""e-commerce:
 Carrinho de compras: vamos adicionar produtos
 CARRINHO DE COMPRAS:
     Produto 1 :
@@ -128,7 +129,7 @@ CARRINHO DE COMPRAS:
     - nome;
     - quantidade;
     - preço;
-'''
+"""
 # 1. Poderiamos usar uma lista para isso
 # carrinho1 = []
 #
@@ -163,7 +164,7 @@ CARRINHO DE COMPRAS:
 # OBS: Dessa forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto podemos ter certeza sobre
 # cada informação
 
-'''METODOS DE DICIONARIOS'''
+"""METODOS DE DICIONARIOS"""
 d1 = dict(a=1, b=2, c=3)
 # print(d1)
 # print(type(d1))
@@ -195,18 +196,18 @@ d3 = dict(a=1, b=2, c=3)
 # print(d3)
 # print(novo_d3)
 
-'''FORMA NÃO USUAAL DE CRIAR DICIONARIOSO'''
-outro = {}.fromkeys('a', 'b')
+"""FORMA NÃO USUAAL DE CRIAR DICIONARIOSO"""
+outro = {}.fromkeys("a", "b")
 # print(outro)
 # print(type(outro))
 
 # usuario = {}.fromkeys(['nome', 'pontos', 'email', 'profile'], 'desconhecido')
 # print(usuario)
 # print(type(usuario))
-'''O metodo fromkeys: receve 2 parametros: 01 iteravel e 01 valor
-Ele vai gerar para cada valor do iteravel 01 chave e ira a atribuir a essa chave o valor informado'''
+"""O metodo fromkeys: receve 2 parametros: 01 iteravel e 01 valor
+Ele vai gerar para cada valor do iteravel 01 chave e ira a atribuir a essa chave o valor informado"""
 
-veja1 = {}.fromkeys('teste', 'valor')  # Aqui não repete chaves. So mostra t, e, s
+veja1 = {}.fromkeys("teste", "valor")  # Aqui não repete chaves. So mostra t, e, s
 # print(veja1)
 #
 # veja2 = {}.fromkeys(range(1, 11), 'novo')
