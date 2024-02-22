@@ -1,4 +1,4 @@
-"""Dicionarios"""
+"""Dicionarios - 1era Parte"""
 
 """OBS: Em alguns linguagens de programação os diccionarios de Python são conhecidos por Mapas
 Dicionarios são coleccines de tipo chave/valor
@@ -213,4 +213,4 @@ veja1 = {}.fromkeys("teste", "valor")  # Aqui não repete chaves. So mostra t, e
 # veja2 = {}.fromkeys(range(1, 11), 'novo')
 # print(veja2)
 
-print("Olá, vc esta no arquivo dicionarios - parte 01")
+print("Olá, vc esta no arquivo Dicionarios")
