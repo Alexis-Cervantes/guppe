@@ -1,4 +1,5 @@
 from collections import defaultdict
+
 """Modulo Collections - Deafult Dict"""
 '''
 https://docs.python.org/3/library/collections.html#collections.defaultdict
@@ -12,7 +13,9 @@ dicionario = defaultdict(lambda: 0)
 # print(dicionario)
 
 dicionario['curso'] = 'Programação em Python: Essencial'
-print(dicionario)
+# print(dicionario)
 
-print(dicionario['outro'])  # Key Error no dicionario comum mas aqui não
-print(dicionario)
+# print(dicionario['outro'])  # Key Error no dicionario comum mas aqui não
+# print(dicionario)
+
+print('Olá você esta no arquivo Collections - defaultdict')
