@@ -1,4 +1,5 @@
 from collections import OrderedDict
+'''https://docs.python.org/3/library/collections.html#collections.OrderedDict'''
 
 """Modulo Collections - Ordered Dict"""
 '''Em um dicionario a ordem de inserção de elementos não é garantida
