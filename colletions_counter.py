@@ -1,6 +1,7 @@
 from collections import Counter
-
+'''https://docs.python.org/3/library/collections.html#collections.Counter'''
 """Modulo Colletions - Counter (contador)"""
+
 
 """Colletions: High-performnace Container Datetypes
 Counter: Receve um iteravel como parametro e cria um objeto do tipo Colletions Counter que é parecido com um dicionario,
