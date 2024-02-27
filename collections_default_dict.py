@@ -1,8 +1,8 @@
 from collections import defaultdict
+'''https://docs.python.org/3/library/collections.html#collections.defaultdict'''
 
 """Modulo Collections - Deafult Dict"""
 '''
-https://docs.python.org/3/library/collections.html#collections.defaultdict
 Default Dict: Ao criar um dicionario utilizando-o, nós informamos um valor default podendo utilizar um lambda paera isso
 Este valor sempre sera utilizado quando não houver um valor definido. Caso tentemos acessar uma chave que não existe, 
 essa chave sera criada e o valor default será atribuido.
