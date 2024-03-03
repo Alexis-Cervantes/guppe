@@ -35,8 +35,9 @@ cores.append("roxo")
 cores.clear()
 # print(cores)
 
-"""DRY: Doint Repeat Yourself - Não repeta vc mesmo - Não repeta seu codigo
+"""DRY: Don´t Repeat Yourself - Não repeta vc mesmo - Não repeta seu codigo
 Em Python a, forma geral de definir uma função é:
+
 def nome_da_função(parametros_da_entrada)
     bloco da função
 ONDE: 
