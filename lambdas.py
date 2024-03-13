@@ -49,12 +49,20 @@ Função Quadrática
 f(x) = a * x ** 2 + b * x + c
 '''
 # Definindo a função:
-def definindo_funcao_quadratica(a,  b, c):
+
+
+def geradora_funcao_quadratica(a, b, c):
     """Retorna a função f(x) = a * x ** 2 + b * x + c"""
     return lambda x: a * x ** 2 + b * x + c
 
+# Estamos pegando a função 'geradora...' e passamos 03 valores. Ao executarse esta função retorna uma fufnção lambda.
+# Esse valor é recevida pela variavel 'teste'. Depois passamos o valor de 'x' em 'teste'
+teste = geradora_funcao_quadratica(2, 3, -5)
+# print(teste(0))
+# print(teste(1))
+# print(teste(2))
 
-teste = definindo_funcao_quadratica(2, 3, -5)
-print(teste(0))
-print(teste(1))
-print(teste(2))
+# Refatorando a função anterior: Não precisa da variavel teste
+# print(geradora_funcao_quadratica(3, 0, 1)(2))
+
+print('Olá você está no arquivo Lambdas')
