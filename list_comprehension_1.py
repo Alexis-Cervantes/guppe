@@ -2,7 +2,9 @@
 
 '''
 - Utilizando list comprhension, nos podemos gerar novas listas com dados processados a partir de outra iteravel
-- Sintaxe: [dado for dado in iteravel]'''
+- Sintaxe: 
+  [dado for dado in iteravel]
+- Vemos que se utilizam colchetes [ ] na Sintaxy'''
 
 # Exemplo 1:
 numeros1 = [1, 2, 3, 4, 5]
