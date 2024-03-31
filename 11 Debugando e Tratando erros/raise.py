@@ -34,7 +34,7 @@ raise TipoDoErro ('Mensagem de Erro)
 #         raise TypeError('Cor precisa ser uma string')
 #     if cor not in cores:
 #         raise ValueError(f'A cor precisa ser uma entre cores')
-#         # print('Todo que está depois do raise é ignorado')  # Ignorado
+#         # print('Thodo que está depois do raise é ignorado')  # Ignorado
 #     print(f'O texto {texto} será impreso na cor {cor}')
 
 
