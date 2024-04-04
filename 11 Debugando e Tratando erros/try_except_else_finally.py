@@ -40,20 +40,69 @@ Finally: È usado geralmente para fechar ou deslocar recursos
 # finally:  # É sempre executado. Independente se houve exceção ou não
 #     print('Executando o Finally')
 
-# Exemplo 5: MAIS COMPLEXO
-def dividir(a, b):
-    return a / b
+# Exemplo 5: MAIS COMPLEXO - ERRADO
+# def dividir1(a, b):
+#     return a / b
 
 
-num1 = int(input('Informe o prinmeiro número: '))
+# num1 = int(input('Informe o prinmeiro número: '))
 
-try:
-    num2 = int(input('Informe o segundo número: '))
-except ValueError:
-    print('O valor precisa ser numerico')
+# try:  # Tratando entrada incorreta
+#     num2 = int(input('Informe o segundo número: '))
+# except ValueError:
+#     print('O valor precisa ser numerico')
 
-try:
-    print(dividir(num1, num2))
-except NameError:
-    print('Valor incorreto')
+# try:  # Tratando a saida representada pela var 'num2' que não sera vista por ser uma var local
+#     print(dividir1(num1, num2))
+# except NameError:
+#     print('Valor incorreto')
 
+# Exemplo 6: MAIS COMPLEXO - CORRETO - Mais profissional
+# OBS: Você é responsavel pelas entradas das suas funções. Então, trate-as!
+# def dividir2(a, b):
+#     try:
+#         return int(a) / int(b)
+#     except ValueError:
+#         return 'Valor incorreto'
+#     except ZeroDivisionError:
+#         return 'Não é possivel realizar uma divisão por zero'
+
+
+# num1 = input('Informe o prinmeiro número: ')
+# num2 = input('Informe o segundo número: ')
+
+# print(dividir2(num1, num2))
+
+# Exemplo 7: MAIS COMPLEXO - GENERICO - De forma mais simples e praticas. Utilizando simplemente um 'except: Ele trata
+# todos os erros possiveis'
+
+
+# def dividir3(a, b):
+#     try:
+#         return int(a) / int(b)
+#     except:
+#         return 'Valor incorreto'
+
+
+# num1 = input('Informe o prinmeiro número: ')
+# num2 = input('Informe o segundo número: ')
+
+# print(dividir3(num1, num2))
+
+# Exemplo 8: MAIS COMPLEXO - SEMI-GENERICO - De forma mais simples e praticas. Utilizando simplemente um 'except: Ele trata
+# todos os erros possiveis'
+
+
+# def dividir4(a, b):
+#     try:
+#         return int(a) / int(b)
+#     except (ValueError, ZeroDivisionError) as err:
+#         return f'Ocorreu um problema: {err}'
+
+
+# num1 = input('Informe o prinmeiro número: ')
+# num2 = input('Informe o segundo número: ')
+
+# print(dividir4(num1, num2))
+
+print('Olá você esta no arquivo try_except_else_finally')
