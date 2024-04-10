@@ -53,13 +53,13 @@ import pdb
 # Exemplo 4: Outra forma de Utillizar o PDB - Python Debbuger:
 # Utilizar o importe do pdb e 'set_trace()' em uma mesma linah
 
-nome = 'Alexis'
-sobrenome = 'Cervantes'
-import pdb; pdb.set_trace()
-nome_completo = nome + ' ' + sobrenome
-curso = 'Programação em Python: Essencial'
-final = nome_completo + ' faz o curso' + curso
-print(final)
+# nome = 'Alexis'
+# sobrenome = 'Cervantes'
+# import pdb; pdb.set_trace()
+# nome_completo = nome + ' ' + sobrenome
+# curso = 'Programação em Python: Essencial'
+# final = nome_completo + ' faz o curso' + curso
+# print(final)
 
 '''
 - Porque utilizar esse formato?
@@ -70,3 +70,27 @@ debbugar. E ao finalzar já fazemos a remoção.
 - A partir do Python 3.7 não é mais necessario importar a biblioteca pdb porque o comando 'debgug' foi incorporado a
 como função built-in (integrada) chamada de "breakpoint"
 '''
+# Exemplo 5: breakpoint
+# nome = 'Alexis'
+# sobrenome = 'Cervantes'
+# breakpoint()
+# nome_completo = nome + ' ' + sobrenome
+# curso = 'Programação em Python: Essencial'
+# final = nome_completo + ' faz o curso' + curso
+# print(final)
+
+# OBS: Cuidado com comflitos entre nome das variaveis e os conando do pdb
+# Exemplo 6:
+
+
+# def soma(l, n , p ,c):
+#     breakpoint()
+#     return l + n + p + c
+
+
+# print(soma(1, 3, 5, 7))
+# Como os nomes das variaveis são os mesmos dos comandos do pdb devemos utilizar o comando p para imprimir o nome
+# das variaveis: Ou seja p (nome da variavel)
+
+print('Olá você esta no arquivo debuggando com pdb')
+
