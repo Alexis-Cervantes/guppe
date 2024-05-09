@@ -102,12 +102,12 @@ def soma_impares(numeros):
     return total  # Posição certo do return
 
 
-lista = [1, 2, 3, 4, 5, 6, 7]
-# print(soma_impares(lista))
+if __name__ == '__main__':
+    lista = [1, 2, 3, 4, 5, 6, 7]
+    print(soma_impares(lista))
 
-tupla = (1, 2, 3, 4, 5, 6, 7)
-# print(soma_impares(tupla))
+    tupla = (1, 2, 3, 4, 5, 6, 7)
+    print(soma_impares(tupla))
 
-# print('Ola, estamos no arquivo Funções com Parametros - duplicado para ser trabalhado no arquivo modulos customizados')
 
 
