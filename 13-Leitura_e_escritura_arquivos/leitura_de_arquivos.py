@@ -33,6 +33,6 @@ ret = arquivo.read()
 # print(arquivo.read())
 # OBS: A função read() lé thodo o conteudo do arquivo. Não funciona o cursor.
 
-# print('Olá vc esta no arquivo leitura de arquivos')
+print('Olá vc esta no arquivo leitura de arquivos')
 
 
