@@ -74,8 +74,33 @@ import os
 # OBS: Caso o arquuivo não exista teremos um FileNotFoundError
 # OBS: Se vc informar um diretorio ao ao inves de um aarquivo teremos um IsADirectoryError
 
-'''REMOVENDO DIRETORIOS'''
-os.rmdir()
+'''REMOVENDO DIRETORIOS VAZIOS'''
+# os.rmdir('templates')
+# OBS: Se o diretorio tiver qualquer conteúdo teremos um OSError
+
+# os.rmdir('templates2')
+# OBS: Se o diretorio não exitir teremos um FileNotFoundError
+
+'''REMOVENDO UMA ARVORE DE DIRETORIOS'''
+# para isso criamos 1 diretorio com 2 arquuivos: dir/arq1.txt arq2.txt
+# for arquivo in os.scandir('dir'):
+#     print(f'- {arquivo.name}')
+#     if arquivo.is_file():
+#         os.remove(arquivo.path)
+
+# Podemos remover uma arvore de diretorios vazios
+# os.removedirs('dir3/dir4')
+# OBS: Se algun dos diretorios contiver arquivos ou outros diretorios, o processo para
+
+'''DIRECIONANDO ARQUIVOS E DIRETORIOS PARA LIXEIRA - Biblioteca Send2trash'''
+# Importando biblioteca
+from send2trash import send2trash
+
+os.remove('cesta2') # Não vai para lixeira. É deletada imediatamente
+'''VS'''
+send2trash('melones.txt') # Vai para lixeira. Pode ser restaurado
+
+
 
 
 
