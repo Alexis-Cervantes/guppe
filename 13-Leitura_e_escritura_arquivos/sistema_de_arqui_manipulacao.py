@@ -1,6 +1,7 @@
 """Sistema de arquivo - Manipulação"""
 '''Importando os'''
 import os
+import tempfile
 
 # COMO DESCOBRIR SE UMA ARQUIVO OU DIRETORIO EXISTE
 # ARQUIVO:
@@ -94,11 +95,22 @@ import os
 
 '''DIRECIONANDO ARQUIVOS E DIRETORIOS PARA LIXEIRA - Biblioteca Send2trash'''
 # Importando biblioteca
-from send2trash import send2trash
+# from send2trash import send2trash
 
-os.remove('cesta2') # Não vai para lixeira. É deletada imediatamente
+# os.remove('cesta2') # Não vai para lixeira. É deletada imediatamente
 '''VS'''
-send2trash('melones.txt') # Vai para lixeira. Pode ser restaurado
+# send2trash('melones.txt') # Vai para lixeira. Pode ser restaurado
+# OBS: Se o arquivo não existir dra um ESError
+
+'''TRABALHANDO COM ARQUIVOS E DIRETORIOS TEMPOSRARIOS'''
+# para isto temeos que importar biblioteca 'temfile
+with tempfile.TemporaryDirectory() as tmp:
+    print(f'Criei o diretorio temporario em {tmp}')
+    with open(os.path.join(tmp, 'arquivos_temporarios.txt'), 'w') as arquivo:
+        arquivo.write('Alexis Cervantes\n')
+    input()
+# OBS: Estamos criando um arquivo temporario, abrindo o mesmo e dentro dele criando um arquivo para escrevermos um
+# texto. No final usamos só o input() so para mantermos os arquivo temporarios 'vivos' dentro dos blocos with.
 
 
 
