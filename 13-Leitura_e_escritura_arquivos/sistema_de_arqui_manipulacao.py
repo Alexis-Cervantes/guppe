@@ -102,16 +102,44 @@ import tempfile
 # send2trash('melones.txt') # Vai para lixeira. Pode ser restaurado
 # OBS: Se o arquivo não existir dra um ESError
 
-'''TRABALHANDO COM ARQUIVOS E DIRETORIOS TEMPOSRARIOS'''
+'''TRABALHANDO COM DIRETORIOS TEMPORARIOS'''
 # para isto temeos que importar biblioteca 'temfile
-with tempfile.TemporaryDirectory() as tmp:
-    print(f'Criei o diretorio temporario em {tmp}')
-    with open(os.path.join(tmp, 'arquivos_temporarios.txt'), 'w') as arquivo:
-        arquivo.write('Alexis Cervantes\n')
-    input()
+# with tempfile.TemporaryDirectory() as tmp:
+#     print(f'Criei o diretorio temporario em {tmp}')
+#     with open(os.path.join(tmp, 'arquivos_temporarios.txt'), 'w') as arquivo:
+#         arquivo.write('Alexis Cervantes\n')
+#     input()
 # OBS: Estamos criando um arquivo temporario, abrindo o mesmo e dentro dele criando um arquivo para escrevermos um
 # texto. No final usamos só o input() so para mantermos os arquivo temporarios 'vivos' dentro dos blocos with.
+'''CRIANDO ARQUIVOS TEMPORARIO'''
+# Com o block 'with'
+# with tempfile.TemporaryFile() as tmp:
+#     tmp.write(b'Alexis\n')
+#     tmp.seek(0)
+#     print(tmp.read())
+# OBS: Em arquivos temporarios só conseguimos escrever bits. Por isso utilizamos b.
 
+# Sem o bloco  'with'
+# arquivo = tempfile.TemporaryFile()
+# arquivo.write(b'Eduarda\n')
+# arquivo.seek(0)
+# print(arquivo.read())
+# arquivo.close()
+
+# Otra forma de criar arquivo:
+# arquivo = tempfile.NamedTemporaryFile()
+# arquivo.write(b'Alexis Arquivo\n')
+#
+# print(arquivo.name)
+#
+# print(arquivo.read())
+#
+# input()
+#
+# arquivo.close()
+
+'''https://docs.python.org/3/library/os.html?highlight=os#module-os'''
+print('Sistema de arquivo: manipulação')
 
 
 
