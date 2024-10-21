@@ -6,9 +6,9 @@ Escrevendo um Iterador Customizado
 #     print(n)
 
 class Contador:
-    def __init__(self, menor, Maior):
+    def __init__(self, menor, maior):
         self.menor = menor
-        self.Maior = Maior
+        self.Maior = maior
 
 
 
