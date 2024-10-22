@@ -41,12 +41,12 @@ class Contador:  # a seguinte função são chamados de COSTRUTORES
 # print(next(it))
 
 # Fazendo o mesmo porem com FOR in:
-for n in Contador(1, 6):
-    print(n) # saida-> 1, 2, 3, 4, 5
+# for n in Contador(1, 6):
+#     print(n) # saida-> 1, 2, 3, 4, 5
 
 # range faz o mesmo:
-for n in range(1, 6):
-    print(n) # saida-> 1, 2, 3, 4, 5
+# for n in range(1, 6):
+#     print(n) # saida-> 1, 2, 3, 4, 5
 
-
+print('iteradores customizados')
 
