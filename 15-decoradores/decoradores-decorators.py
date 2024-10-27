@@ -20,8 +20,7 @@ Decorators?
 from xml.sax.handler import property_interning_dict
 
 # Decorators com funções (Sintaxe não recomendada /  Sem açúcar Sinstático )
-# Decrators Function:
-# def seja_educado(funcao):
+# def seja_educado(funcao):     # Decrators Function/Função decoradora:
 #     def sendo():
 #         print('foi um prazer conhecer você')
 #         funcao()
@@ -36,7 +35,7 @@ from xml.sax.handler import property_interning_dict
 
 # Testando 1 - agora vamos decorarla:
 
-# teste = seja_educado(saudacao)
+# teste = seja_educado(saudacao)        # Decorator aplicada
 # teste() # Aprimoramos a função
 
 # Testando 2:
