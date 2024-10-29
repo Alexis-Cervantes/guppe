@@ -1,0 +1,27 @@
+POO-OPP
+
+Lenguagem C: Não suporta POO porque ele so suporta programação estruturada
+Linguagem java : Não suporta paradigma estruturado porque ele so suporta POO
+Linguagem Python: Multiparadigma (Suporta POO, ptogramação estruturada e programação funcional
+
+-------------------------------
+|        C L A S S E (molde)  |
+| --------------------------- |
+| |     Produto (método)    | |
+| |-------------------------| |
+| |(atributos)   +nome      | |
+| |              +preço     | |
+| |              +desconto  | |
+| --------------------------- |
+-------------------------------
+
+        OBJETOS / INSTANCIAS
+ -------------------    -----------------
+ |     Notebook    |    |   Caneta Bic  |
+ |-----------------|    |----------------
+ |   R$ 2.500,00   |    |   R$ 2,95     |
+ |       15%       |    |   5%          |
+ -------------------    -----------------
+
+CONSTRUTOR = Método Especial para criar objetos a partir se nossa classe.
+OBJETOS/INSTANCIAS =
