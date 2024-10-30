@@ -12,6 +12,15 @@ sistema. No caso da lampada um comportamento que nos iriamos querer saber é o l
 
 - Em python para definir uma clase utilizamos a palavra reservada 'class'
 - pass é usado para prencher o conteudo da classe que não faz nada
+
+OBS1: Quando nomeamos a 'nossas' clases usamos por convensão o nome com inicial com mauiscul. Se o nome for composto
+utiliza-se as iniciais de ambas as palavras em maiúsculo, todas juntas.
+
+OBS2: Não utilizar acentuação, carater especial, espaçõs ou similares para nomes de Clases/atributos/métodos/arquivos
+/diretoris etc
+
+OBS3: Quanndo estamos planejando um software e definimso quais clases teremos que ter no sistema, chamamos esses
+objetos que serão mapeados para clase de entidade.
 """
 from symtable import Class
 
@@ -25,8 +34,26 @@ from symtable import Class
 # print(type(nome))
 
 # POO
-class Lampada:
-    pass
+# class Lampada:
+#     pass
 
-lamp = Lampada()
-print(type(lamp))
+# lamp = Lampada()
+# print(type(lamp))
+
+# class ContaCorrente: # clase de entidade
+#     pass
+
+# class Produto: # clase de entidade
+#     pass
+
+# class Usuario: # clase de entidade
+#     pass
+
+# class Int: # clase de entidade
+#     pass
+
+# valor = int('74')  # cast
+# print(help(int))
+# inteiro = Int()
+
+print('classes')
