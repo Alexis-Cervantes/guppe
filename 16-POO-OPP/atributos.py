@@ -127,19 +127,76 @@ e esse valor é compartilhado entre todas as instâncias da clase. Ou seja, ao i
 proprios valores como é o caso dos atributos de instância, com os atributos de clase todas as instâncias terão os mesmo
 valores para esse atributo.  
 """
-class Produtos:
+# class Produtos:
     # Atributo de clase
-    imposto = 1.05 # 0.05 % de imposto
+    # imposto = 1.05 # 0.05 % de imposto
+    # contador = 0
 
-    def __init__(self, nome, descricao, valor):
-        self.nome = nome
-        self.descricao = descricao
-        self.valor = (valor*Produtos.imposto)
+    # def __init__(self, nome, descricao, valor):
+    #     self.id = Produtos.contador + 1
+    #     self.nome = nome
+    #     self.descricao = descricao
+    #     self.valor = (valor*Produtos.imposto)
+    #     Produtos.contador = self.id
 
-p1 = Produtos('PlayStation 4', 'Video game', 2300 )
-p2 = Produtos('Xbox 5', 'Video game', 4500 )
+# p1 = Produtos('PlayStation 4', 'Video game', 2300 )
+# p2 = Produtos('Xbox 5', 'Video game', 4500 )
 
-print(p1.valor) # 2415.0
-print(p2.valor) # 4725.0
+# print(p1.valor) # 2415.0 -  porem incorreto acesso
+# print(p2.valor) # 4725.0 -  Porem incorreto acesso
 
 # OBS: Não precisamos criar uma instância de uma clase para fazer acesso a um atributo de clase
+# print(Produtos.imposto)
+
+# testando o contador e o id
+# print(p1.id)
+# print(p2.id)
+
+# OBS: Em java os atributos de clase (python) são chamados atributos estáticos.
+
+'''Atributos Dinâmicos: '''
+"""
+Atributo de instância que pode ser criado em tempo de execução; e ele é exclusivo da instancia que o criou.
+"""
+# class Produts:
+    # Atributo de clase
+    # imposto = 1.05 # 0.05 % de imposto
+    # contador = 0
+
+    # def __init__(self, nome, descricao, valor):
+    #     self.id = Produts.contador + 1
+    #     self.nome = nome
+    #     self.descricao = descricao
+    #     self.valor = (valor*Produts.imposto)
+    #     Produts.contador = self.id
+
+# p1 = Produts('PlayStation 6', 'Video game', 2200 )
+# p2 = Produts('Arroz', 'Mercearia', 5.99 )
+
+# Criando um atributo dinâmico em tempo de execução:
+# p2.peso = '5Kg'
+# p1.peso = '3Kg'# Note que na calse products não exite o atributo peso
+# print(f'Produto: {p2.nome}, Descrição: {p2.descricao}, Valor: {p2.valor}, Peso: {p2.peso}')
+# print(f'Produto: {p1.nome}, Descrição: {p1.descricao}, Valor: {p1.valor}, Peso: {p1.peso}')
+
+# Deletando atributos
+# aantes de deletar
+# print(p1.__dict__)
+# print(p2.__dict__)
+
+# Acessando a Clase Products:
+# print(Produts.__dict__) # Saisa-> {'__module__': '__main__', 'imposto': 1.05, 'contador': 2, '__init__': <function
+# Produts.__init__ at 0x0000022A01DC51C0>, '__dict__': <attribute '__dict__' of 'Produts' objects>, '__weakref__':
+# <attribute '__weakref__' of 'Produts' objects>, '__doc__': None}
+
+# deletando:
+# depois de deletar
+# del p2.peso
+# del p1.peso
+# del p2.valor
+# del p2.descricao
+
+# print(p1.__dict__)
+# print(p2.__dict__)
+
+print('atributos - poo')
