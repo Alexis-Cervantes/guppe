@@ -46,7 +46,10 @@ class Produto:
         """Retorna o valor do produto com o desconto"""
         return (self.__valor * (100 - porcentagem)) / 100
 
+
 from passlib.hash import pbkdf2_sha256 as cryp
+
+
 class Usuario:
 
     def __init__(self, nome, sobrenome, email, senha):
@@ -73,12 +76,12 @@ class Usuario:
 user1 = Usuario('Alexis', 'Cervantes', 'iacervantes@outlook.com', '123456')
 user2 = Usuario('Eduarda', 'Cervantes', 'madudacervantes@gmail.com', '123456')
 
-print(user1.nome_completo())
-print(user2.nome_completo())
+# print(user1.nome_completo())
+# print(user2.nome_completo())
 
 # Acessos errados:
-print(f'Senha user1: {user1._Usuario__senha}')
-print(f'Senha user2: {user2._Usuario__senha}')
+# print(f'Senha user1: {user1._Usuario__senha}')
+# print(f'Senha user2: {user2._Usuario__senha}')
 
 # Vamos a baixar uma biblioteca chamada de 'passlib' no cabeçalho da clase para ocultar a senha
 nome = input('Informe o nome: ')
@@ -91,6 +94,7 @@ if senha == confirma_senha:
     user = Usuario(nome, sobrenome, email, senha)
 else:
     print('senha não confere')
+    exit(42)
 
 print('Usuario criado com sucesso')
 senha = input('Informe a senha para acesso: ')
@@ -100,4 +104,4 @@ if user.checa_senha(senha):
 else:
     print('Acesso negado')
 
-print(f'Senha User Criptografiada: {user._Usuario__senha}')
+print(f'Senha User Criptografiada: {user._Usuario__senha}') # Aceeso Errado
