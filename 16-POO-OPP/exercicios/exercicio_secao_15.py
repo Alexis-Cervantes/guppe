@@ -1,4 +1,6 @@
 """
+Exercicios:
+
 1. Crie uma classe Pessoa, contendo nome, data de nascimento e email. Crie as propriedades getters e setters para os
 atributos e um méthodo para imprimir os dados de uma pessoa.
 
@@ -19,12 +21,24 @@ atributos e um méthodo para imprimir os dados de uma pessoa.
 class Pessoa:
 
     def __init__(self, nome, data_nascimento, email):
-        self.nome = nome
-        self.data_nascimento = data_nascimento
-        self.email = email
+        self.__nome = nome
+        self.__data_nascimento = data_nascimento
+        self.__email = email
+
+    @property
+    def nome(self):
+        return f'{self.__nome}'
+
+    @property
+    def data_nascimento(self):
+        return f'{self.__data_nascimento}'
+
+    @property
+    def email(self):
+        return f'{self.__email}'
 
     def imprime_dados(self):
-        print(f'Nome : {self.nome}, data de nascimento: {self.data_nascimento}, email: {self.email}')
+        print(f'Nome: {self.nome}, data de nascimento: {self.data_nascimento}, email: {self.email}')
 
 # Questão 2
 class Agenda:
@@ -45,7 +59,16 @@ class Televisao:
     pass
 
 # Testando questão 1
-pes1 = Pessoa('alexis', '26/06/1974', 'iacervantes@outlook.com')
+pes1 = Pessoa('Alexis', '26/06/1974', 'iacervantes@outlook.com')
+pes2 = Pessoa('Eduarda', '09-11-2008', 'madudacervantes@gmail.com')
+
 print(pes1.nome)
 print(pes1.data_nascimento)
 print(pes1.email)
+
+print(pes2.nome)
+print(pes2.data_nascimento)
+print(pes2.email)
+
+Pessoa.imprime_dados(pes1)
+Pessoa.imprime_dados(pes2)
