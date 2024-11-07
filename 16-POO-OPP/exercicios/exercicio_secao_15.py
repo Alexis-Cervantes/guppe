@@ -39,7 +39,6 @@ class Pessoa:
 # Pessoa.imprime_dados(pes1)
 # Pessoa.imprime_dados(pes2)
 
-
 '''2. Crie uma classe Agenda que pode armazenar contatos e seja possível realizar as seguintes operações:
     a) armazenar_contato(contato: Contato);
     b) remover_contato(contato: Contato);
@@ -51,27 +50,33 @@ class Agenda:
 
     agenda = []
 
-    def __init__(self, contato):
-        self.contato = contato
+    def __init__(self, nome, telefone, data_nascimento):
+        self.__nome = nome
+        self.__telefone = telefone
+        self. __data_nascimento = data_nascimento
 
-    def armazenar_contato(self, contato):
-        agenda = contato.append()
+    def armazenar_contato(self, nome):
+        agenda = nome
+        return agenda
 
     def remover_contato(self):
         pass
-
     def buscar_contato(self):
         pass
-
     def imprimir_agenda(self):
         pass
-
     def imprimir_contato(self):
         pass
 
 # Testando Questão 2:
-cont = Agenda('alexis')
-print(cont.contato)
+cont1 = Agenda('Alexis', '(81)9-9816-2041', '26/06/1974')
+# cont2 = Agenda('Eduarda', '(81)9-8544-0902', '09/11/2008')
+
+# print(cont1.nome)
+# print(cont1.telefone)
+# print(cont1.data_nascimento)
+
+# print(f'Contato: Nome: {cont2.nome}, telefone: {cont2.telefone}, aniversario: {cont2.data_nascimento}  ')
 
 
 '''3. Crie as classes Televisao com atributo status, volume, canal e ControleRemoto com o atributo televisao, de forma que:
