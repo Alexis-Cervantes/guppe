@@ -53,11 +53,12 @@ class Agenda:
     def __init__(self, nome, telefone, data_nascimento):
         self.__nome = nome
         self.__telefone = telefone
-        self. __data_nascimento = data_nascimento
+        self.__data_nascimento = data_nascimento
 
-    def armazenar_contato(self, nome):
-        agenda = nome
-        return agenda
+    def armazenar_contato(self, nome, telefone, data_nascimento, contato):
+        contato = input('Digite nome do contato: ')
+        self.agenda = contato
+        print(f'Se agendou a: {contato}')
 
     def remover_contato(self):
         pass
@@ -70,13 +71,12 @@ class Agenda:
 
 # Testando Questão 2:
 cont1 = Agenda('Alexis', '(81)9-9816-2041', '26/06/1974')
-# cont2 = Agenda('Eduarda', '(81)9-8544-0902', '09/11/2008')
+cont2 = Agenda('Eduarda', '(81)9-8544-0902', '09/11/2008')
+cont3 = Agenda('Cacia', '(81)9-8477-2577', '06/11/1970')
 
-# print(cont1.nome)
-# print(cont1.telefone)
-# print(cont1.data_nascimento)
-
-# print(f'Contato: Nome: {cont2.nome}, telefone: {cont2.telefone}, aniversario: {cont2.data_nascimento}  ')
+print(cont1._Agenda__nome)
+print(cont1._Agenda__telefone)
+print(cont1._Agenda__data_nascimento)
 
 
 '''3. Crie as classes Televisao com atributo status, volume, canal e ControleRemoto com o atributo televisao, de forma que:
