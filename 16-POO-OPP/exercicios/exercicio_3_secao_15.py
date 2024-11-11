@@ -22,13 +22,56 @@ class Televisao:
         self.__status = status
 
     @property
-    def volume(self)-> int:
+    def volume(self) -> int:
         return self.__volume
 
     @volume.setter
-    def volume(self, volume: int)-> None:
+    def volume(self, volume: int) -> None:
         self.__volume = volume
 
+    @property
+    def canal(self) -> int:
+        return self.__canal
 
+    @canal.setter
+    def canal(self, canal: int) -> None:
+        self.__canal = canal
 
+    def ligar_desligar(self) -> None:
+        self.status = not self.status
 
+        if self.status:
+            print('Stataus da TV Ligada')
+        else:
+            print('Status da TV Desligada')
+
+    def aumentar_volume(self) -> None:
+        self.volume = self.volume + 1
+        print(f'Volume da TV +: {self.volume}')
+
+    def diminuir_volume(self) -> None:
+        self.volume = self.volume - 1
+        print(f'Volume da TV -: {self.volume}')
+
+    def aumentar_canal(self) -> None:
+        self.canal = self.canal + 1
+        print(f'Canal da TV +: {self.canal}')
+
+    def diminuir_canal(self) -> None:
+        self.canal = self.canal - 1
+        print(f'Canal da TV -: {self.canal}')
+
+    def mudar_canal(self, canal: int) -> None:
+        self.canal = canal
+        print(f'Canal da TV ? {self.canal}')
+
+class ControleRemoto:
+
+    def __init__(self, televisao: Televisao) -> None:
+        self.__televisao: Televisao = televisao
+
+    @property
+    def televisao(self) -> Televisao:
+        return self.__televisao
+
+    def ligar_desligar
