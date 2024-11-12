@@ -41,7 +41,7 @@ class Televisao:
         self.status = not self.status
 
         if self.status:
-            print('Stataus da TV Ligada')
+            print('Status da TV Ligada')
         else:
             print('Status da TV Desligada')
 
