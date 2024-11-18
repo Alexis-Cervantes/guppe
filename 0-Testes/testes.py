@@ -1,37 +1,37 @@
-tclass SampleClass:
+class SampleClass:
 
-    def __init__(self, a: int, b: str) -> None:
+    def __init__(self, a):
         ## Private variable or property in Python
         self.__a = a
-        self.b = b
+        # self.b = b
 
     ## Getter method to get the properties using an object
-    def get_a(self) -> int:
+    def get_a(self):
         return self.__a
 
     ## Setter method to change the value 'a' using an object
-    def set_a(self, a: int) -> None:
+    def set_a(self, a):
         self.__a = a
 
-    def get_b(self) -> str:
-        return self.b
+    # def get_b(self) -> str:
+    #     return self.b
 
-    def set_b(self, b: str) -> None:
-        self.b = b
+    # def set_b(self, b: str) -> None:
+    #     self.b = b
 
 ## Creating an object
-obj = SampleClass(10, 'alexis')
+obj = SampleClass(10)
 
 ## Getting the value of 'a' using get_a method
 print(obj.get_a())
-print(obj.get_b())
+# print(obj.get_b())
 
 ## Setting a new value to the 'a' using set_a method
 obj.set_a(1974)
-obj.set_b('Duda')
+# obj.set_b('Duda')
 
 print(obj.get_a())
-print(obj.get_b())
+# print(obj.get_b())
 
 
 

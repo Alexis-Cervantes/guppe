@@ -1,10 +1,7 @@
-from testes import *
-
-
 class SampleClass1:
 
     def __init__(self, a):
-        ## calling the set_a() method to set the value 'a' by ckecking certain conditions
+        ## calling the 'set_a() method' to set the value 'a' by ckecking certain conditions
         self.set_a(a)
 
     ## getter method to get the properties using an object
@@ -19,3 +16,7 @@ class SampleClass1:
             self.__a = a
         else:
             self.__a = 2
+
+obj = SampleClass1(15)
+
+print(obj.get_a())
