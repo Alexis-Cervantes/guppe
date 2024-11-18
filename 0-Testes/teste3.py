@@ -19,7 +19,3 @@ class SampleClass1:
             self.__a = a
         else:
             self.__a = 2
-
-
-
-

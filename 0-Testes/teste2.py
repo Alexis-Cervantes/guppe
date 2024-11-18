@@ -8,3 +8,10 @@ obj = PythonicWay(10)
 
 print(obj.a)
 
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-class SampleClass:
+tclass SampleClass:
 
     def __init__(self, a: int, b: str) -> None:
         ## Private variable or property in Python
@@ -32,6 +32,7 @@ obj.set_b('Duda')
 
 print(obj.get_a())
 print(obj.get_b())
+
 
 
 
