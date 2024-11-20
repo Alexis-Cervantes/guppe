@@ -15,3 +15,9 @@ class Property:
             self.__a = var
         else:
             self.__a = 2
+
+# Creating an object for the class 'Property'
+obj = Property(23)
+
+print(obj.a)
+
