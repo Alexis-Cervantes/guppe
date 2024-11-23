@@ -125,11 +125,16 @@ class Funcionario(Pessoa):
 
     # Overriding
     def nome_completo(self):
+        print(super().nome_completo())
+        print(self._Pessoa__cpf)
         return f'Funcionario: {self.__matricula} Nome: {self._Pessoa__nome}'
 
 # Sobreescrita de métodos ou (overriding)
-cliente1 = Cliente('Alexis', 'Cervantes', 70247526452, 1300)
-funcionario1 = Funcionario('Eduarda', 'Cervantes', 70165412382, 5000)
+# cliente1 = Cliente('Alexis', 'Cervantes', 70247526452, 1300)
+# funcionario1 = Funcionario('Eduarda', 'Cervantes', 70165412382, 5000)
 
-print(cliente1.nome_completo())
-print(funcionario1.nome_completo())
+# print(cliente1.nome_completo())
+# print(funcionario1.nome_completo())
+
+
+print('herança')
