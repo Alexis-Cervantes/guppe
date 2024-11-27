@@ -94,3 +94,12 @@ conta2 = Conta('Duda', 2000, 4000)
 # Acesso de forma correta aso saldos
 soma = conta1.get_saldo() + conta2.get_saldo()
 print(f'A soma das duas contas é: {soma}')
+
+"""Criar getter e setters como a criamos liha acima é tipico do Java. getters são faceis de manipular, porem os seters
+são perigossos pela função de mexer com valores ou modificar valorers"""
+
+# Exemplo usando setters criados:
+print(conta1.__dict__)
+conta1.set_limite(9999999)
+print(conta1.__dict__)
+""
