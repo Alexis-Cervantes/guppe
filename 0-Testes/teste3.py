@@ -17,6 +17,6 @@ class SampleClass1:
         else:
             self.__a = 2
 
-obj = SampleClass1(15)
+obj = SampleClass1(20)
 
 print(obj.get_a())
