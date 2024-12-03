@@ -60,7 +60,29 @@ class Terrestre(Animal):
     def cumprimentar(self):
         return f'Eu sou {self._Animal__nome} da terra'
 
-class Pinguim(Terrestre, Aquatico):
+class Pinguim(Terrestre, Aquatico): # A ordem entre Terrestre/Aquatico definira as informações de saida
     def  __init__(self, nome):
         super().__init__(nome)
 
+# Testando:
+baleia = Aquatico('Nilie')
+# print(baleia.nadar())
+# print(baleia.cumprimentar())
+
+tatu = Terrestre('Colmen')
+# print(tatu.andar())
+# print(tatu.cumprimentar())
+
+tux = Pinguim('Alberto')
+# print(tux.andar())
+# print(tux.nadar())
+# print(tux.cumprimentar()) # 'Eu sou Alberto da terra' / 'Eu sou Alberto do mar' - MRO: Method Resolution Order
+
+# Objeto é instancia de..
+# print(f'Tux é instância de Pinguim? {isinstance(tux, Pinguim)}')
+# print(f'Tux é instância de Aquatico? {isinstance(tux, Aquatico)}')
+# print(f'Tux é instância de Terrestre? {isinstance(tux, Terrestre)}')
+# print(f'Tux é instância de Animal? {isinstance(tux, Animal)}')
+# print(f'Tux é instância de Object? {isinstance(tux, object)}')
+
+print('Herença multipla')
