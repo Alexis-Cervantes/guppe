@@ -156,10 +156,11 @@ retornan o valor do atributo e os setters alterão o valor do atributo'''
 #         self.__saldo -= valor
 #         destino.__saldo += valor
 
-    # Criando um property
-    # @property
-    # # def valor_total(self):
-    # #     return self.__saldo + self.__limite
+#    # Criando um property
+
+#    @property
+#    def valor_total(self):
+#        return self.__saldo + self.__limite
 
 # Instanciando a classe
 # conta1 = Conta('Alexis', 3000, 5000)
