@@ -25,10 +25,3 @@ class Veiculo:
 
     def imprime(self) -> None:
         print(f'marca: {self.__marca}, modelo: {self.__modelo}')
-
-carro1 = Veiculo('Fiat', 'Palio')
-carro2 = Veiculo('Chevrolet', 'Onix')
-
-print(carro1.imprime())
-print(carro1.marca)
-print(carro2.modelo)
