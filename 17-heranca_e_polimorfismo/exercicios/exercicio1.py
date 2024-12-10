@@ -3,23 +3,32 @@ um méthodo para imprimir os dados de um veículo. Crie também o construtor da 
 
 class Veiculo:
 
-    def __init__(self, marca, modelo):
-        self.__marca = marca
-        self.__modelo = modelo
+    def __init__(self, marca: str, modelo: str) -> None:
+        self.__marca: str = marca
+        self.__modelo: str = modelo
 
     @property
-    def marca(self):
+    def marca(self) -> str:
         return self.__marca
 
     @marca.setter
-    def marca(self, nova_marca):
-        self.__marca = nova_marca
+    def marca(self, marca: str) -> None:
+        self.__marca = marca
 
     @property
-    def modelo(self):
+    def modelo(self) -> str:
         return self.__modelo
 
     @modelo.setter
-    def modelo(self, novo_modelo):
-        self.__modelo = novo_modelo
+    def modelo(self, modelo: str) -> None:
+        self.__modelo = modelo
 
+    def imprime(self) -> None:
+        print(f'marca: {self.__marca}, modelo: {self.__modelo}')
+
+carro1 = Veiculo('Fiat', 'Palio')
+carro2 = Veiculo('Chevrolet', 'Onix')
+
+print(carro1.imprime())
+print(carro1.marca)
+print(carro2.modelo)
