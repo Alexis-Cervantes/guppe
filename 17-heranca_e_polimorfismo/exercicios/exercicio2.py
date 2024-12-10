@@ -6,7 +6,7 @@ from exercicio1 import Veiculo
 class Carro(Veiculo):
 
     def __init__(self, portas: int, marca: str, modelo: str):
-        super().__init__(portas)
+        self.__portas = portas
         super().__init__(marca)
         super().__init__(modelo)
 
