@@ -23,5 +23,6 @@ class Veiculo:
     def modelo(self, modelo: str) -> None:
         self.__modelo = modelo
 
-    def imprime(self) -> None:
-        print(f'marca: {self.__marca}, modelo: {self.__modelo}')
+    def imprimir(self) -> None:
+        print(f'Marca: {self.__marca}')
+        print(f'Modelo: {self.__modelo}')

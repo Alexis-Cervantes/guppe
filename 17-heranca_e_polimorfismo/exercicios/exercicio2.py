@@ -5,17 +5,18 @@ from exercicio1 import Veiculo
 
 class Carro(Veiculo):
 
-    def __init__(self, portas: int, marca: str, modelo: str):
-        self.__portas = portas
-        super().__init__(marca)
-        super().__init__(modelo)
+    def __init__(self, marca: str, modelo: str, portas: int) -> None:
+        super().__init__(marca, modelo)
+        self.__portas: int = portas
 
     @property
     def portas(self) -> int:
         return self.__portas
 
     @portas.setter
-    def portas(self, portas) -> None:
+    def portas(self, portas: int) -> None:
         self.__portas = portas
 
     def imprime(self) -> None:
+        super().imprimir()
+        print(f'Portas: {self.__portas}')
