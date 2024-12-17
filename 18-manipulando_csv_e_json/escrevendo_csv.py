@@ -38,7 +38,7 @@ from pickletools import stringnl_noescape_pair
 #             duracao = input('Informe a Duração (em minutos): ')
 #             escritor_csv.writerow({'Título': filme, 'Gênero': genero, 'Duração': duracao})
 
-
+print('escrevendo CSV')
 
 
 
