@@ -31,7 +31,70 @@ import json
 # print(ret)
 
 # INTEGRANDO JSON COM PICKLE (pip install jsonpickle)
+# import jsonpickle
 
+# class Gato:
+#     def __init__(self, nome, raca):
+#         self.__nome = nome
+#         self.__raca = raca
+#
+#     @property
+#     def nome(self):
+#         return self.__nome
+#
+#     @property
+#     def raca(self):
+#         return self.__raca
+#
+# felix = Gato('Felix', 'Viralata')
+# ret = jsonpickle.encode(felix)
+# print(ret)
 
+# Refatorando a classe - ESCRITA
 
+# import jsonpickle
+#
+# class Gato:
+#     def __init__(self, nome, raca):
+#         self.__nome = nome
+#         self.__raca = raca
+#
+#     @property
+#     def nome(self):
+#         return self.__nome
+#
+#     @property
+#     def raca(self):
+#         return self.__raca
+#
+# felix = Gato('Felix', 'Viralata')
+# with open('felix.json', 'w') as arquivo:
+#     ret = jsonpickle.encode(felix)
+#     arquivo.write(ret)
 
+# Refatorando a classe - LEITURA
+
+# import jsonpickle
+#
+# class Gato:
+#     def __init__(self, nome, raca):
+#         self.__nome = nome
+#         self.__raca = raca
+#
+#     @property
+#     def nome(self):
+#         return self.__nome
+#
+#     @property
+#     def raca(self):
+#         return self.__raca
+#
+# with open('felix.json', 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     ret = jsonpickle.decode(conteudo)
+#     print(ret)
+#     print(type(ret))
+#     print(ret.nome)
+#     print(ret.raca)
+
+print('trabalhando com Json e pikle')
