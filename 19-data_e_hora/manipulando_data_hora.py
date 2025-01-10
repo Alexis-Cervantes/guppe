@@ -31,5 +31,28 @@ import datetime
 # print(inicio)
 
 # É possivel criar uma data hora
-evento = datetime.datetime(1974, 6, 26,0)
-print(evento)
+# evento = datetime.datetime(1974, 6, 26,0)
+# print(type(evento))
+# print(type('31/12/2018'))
+# print(evento)
+
+# Podemos receber uma data de tipo 'string' pelo usuario (input) e converter em formato datetime pythom
+# nascimento = input('Informa sua data de nascimento (dd/mm/yyyy) ')
+# nascimento = nascimento.split('/')
+
+# nascimento = datetime.datetime(int(nascimento[2]), int(nascimento[1]), int(nascimento[0]))
+# print(nascimento)
+# print(type(nascimento))
+
+# Acessa indivisual dos elementos de data e hora
+# evento = datetime.datetime.now()
+
+# print(evento.year) # ano
+# print(evento.month) # mes
+# print(evento.day) # dia
+# print(evento.hour) # hora
+# print(evento.minute) # minuto
+# print(evento.second) # segundo
+# print(evento.microsecond) # microsegundo
+
+print('manipulando data e hora')
