@@ -109,15 +109,27 @@ import datetime
 # hoje = datetime.datetime.today()
 # print(formata_data(hoje))
 
-
-# Refatorando nosso codigo anterior (instalando biblioteca 'textblob'
+# Refatorando nosso codigo anterior (instalando biblioteca 'textblob')
 from textblob import TextBlob
 
-def formatando_data(data):
-    return f"{data.day} de {TextBlob(data.strftime('%B')).translate(to='pt-br')} de {data.year}"
+# def formatando_data(data): # Não funcioanou por caisa da classe translate que esta descontinuada.
+#     return f"{data.day} de {TextBlob(data.strftime('%B')).translate(to='pt-br')} de {data.year}"
 
-hoje = datetime.datetime.today()
-print(formatando_data(hoje))
+# hoje = datetime.datetime.today()
+# print(formatando_data(hoje))
+
+# Uma alternativa a classe 'translete' que não esta mais disponivel dentro da biblioteca 'textblod' é a biblioteca
+# 'googletrans'. Depois de instalada é so chamar ela:
+
+from googletrans import Translator
+
+frase = "Pythom é ótimo para Machine Learning"
+
+traduzir = Translator()
+
+frase_es = traduzir.translate(frase, dest='es')
+tb_es = frase_es.text
+tb_es
 
 
 
