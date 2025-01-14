@@ -110,13 +110,56 @@ import datetime
 # print(formata_data(hoje))
 
 # Refatorando nosso codigo anterior (instalando biblioteca 'textblob')
-from textblob import TextBlob
+# from textblob import TextBlob
 
-# def formatando_data(data): # Não funcioanou por caisa da classe translate que esta descontinuada.
+# def formatando_data(data): # Não funcioanou por caisa que a classe 'translate' esta descontinuada.
 #     return f"{data.day} de {TextBlob(data.strftime('%B')).translate(to='pt-br')} de {data.year}"
 
 # hoje = datetime.datetime.today()
 # print(formatando_data(hoje))
+
+# Transformando uma string de tipo 'datetime' com ferramenta 'strptime'
+# nascimento = datetime.datetime.strptime('26/06/1974', '%d/%m/%Y')
+# print(nascimento)
+
+# Agora data forncedida pelo usuario
+# nascimento = input('Qual sua data de nascimento? (dd/mm/yyyy): ')
+# nascimento = datetime.datetime.strptime(nascimento, '%d/%m/%Y')
+# print(nascimento)
+
+# Trabalhando somente com Hora -time
+# almoco = datetime.time(12, 30, 0)
+# print(almoco)
+
+# marcando tempo de execução cdo nosso codigo com 'timeit'.
+# importando 'timeit'
+
+import timeit, functools
+
+# O timeit salva automaticamente tempo inicial e tempo final
+# O timeit recebe dois parametros 1ro (string - expressão que vc quere testar) e 2do(nro de vezes que quer testar)
+# loop for
+# tempo = timeit.timeit('"-".join(str(n) for n in range(100))', number=10)
+# print(tempo)
+
+# List comprehnsion
+# tempo = timeit.timeit('"-".join([str(n) for n in range(100)])', number=10)
+# print(tempo)
+
+# map - O mais rapido / mais performatico
+# tempo = timeit.timeit('"-".join(map(str, range(100)))', number=10)
+# print(tempo)
+
+# Trabalhando com 'functools' e a função 'partial'
+# def teste(n):
+#     soma = 0
+#     for num in range(n * 200):
+#         soma = soma + num ** num + 4
+#     return soma
+
+# print(timeit.timeit(functools.partial(teste, 2), number=10000))
+
+print('metodos data e hora')
 
 
 
