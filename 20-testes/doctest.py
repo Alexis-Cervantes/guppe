@@ -1,12 +1,13 @@
 """"Doctest"""
 '''
 Doctests são testes que colocamos no 'docstring' das funções/metodos Python.
-Para rodar um test do doctest:
-python -m doctest -v nome_do_módulo.py
+Para rodar um test do doctest no terminal da IDE:
+Utilizamos: 'python -m doctest -v nome_do_módulo.py'
 
-- (guppe) D:\codando\ahorapy\PycharmProjects\guppe> python 20-testes/doctest.py
+Exemplo:
+(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python 20-testes/doctest.py
 7
-- (guppe) D:\codando\ahorapy\PycharmProjects\guppe> python -m doctest -v  20-testes/doctest.py
+(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python -m doctest -v  20-testes/doctest.py
 7
 Trying:
     soma(1, 2)
@@ -31,7 +32,10 @@ def soma(a, b):
 
     >>> soma(1, 2)
     3
+    >>> soma(4, 6)
+    10
     """
+
     return a + b
 
 print(soma(3, 4)) # 7
