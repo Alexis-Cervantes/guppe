@@ -5,9 +5,10 @@ Para rodar um test do doctest no terminal da IDE:
 Utilizamos: 'python -m doctest -v nome_do_módulo.py'
 
 Exemplo:
-(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python 20-testes/doctest.py
+(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python 20-testes\doctest.py #Aqui so executamos "print(soma(3, 4)"
 7
-(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python -m doctest -v  20-testes/doctest.py
+(guppe) D:\codando\ahorapy\PycharmProjects\guppe> python -m doctest -v 20-testes\doctest.py #Aqui vc executa a função
+com o "doctest"
 7
 Trying:
     soma(1, 2)
@@ -24,18 +25,54 @@ Test passed.
 
 (guppe) D:\codando\ahorapy\PycharmProjects\guppe>
 '''
-
 # Exemplo 1:
+# def soma(a, b):
+    #"""soma os números a e b
 
-def soma(a, b):
-    """soma os números a e b
+    #>>> soma(1, 2)
+    #3
+    #>>> soma(4, 6)
+    #10
+    #"""
+    #return a + b
 
-    >>> soma(1, 2)
-    3
-    >>> soma(4, 6)
-    10
-    """
+# print(soma(3, 4)) # 7
 
-    return a + b
+# Exemplo 2: APLICANDO O TDD
+# def duplicar(valores):
+#     """duplica os valores em uma lista
+#     >>> duplicar([1, 2, 3, 4])
+#     [2, 4, 6, 8]
 
-print(soma(3, 4)) # 7
+    # >>> duplicar([])
+    # []
+
+    # >>> duplicar(['a', 'b', 'c'])
+    # ['aa', 'bb', 'cc']
+
+    # >>> duplicar([True, None])
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+    # """
+    # return [2 * elemento for elemento in valores]
+
+# Erro inesperado: ATENÇÃO o python não reconhece aspas duplas dentro do doctest
+
+# def fala_oi():
+#     """fala oi
+#     >>> fala_oi()
+#     'oi'
+#     """
+#     return "oi"
+
+# Um uktimo caso estranho:
+# def verdade():
+#     """Retorne verdade
+#     >>> verdade()
+#     True
+#     """
+#     return True
+
+print('doctest')
+
